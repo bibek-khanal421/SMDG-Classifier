@@ -19,9 +19,8 @@ The following dependencies are required to run the code:
 The dataset should be unzipped and placed in the main directory alongside train.ipynb within the repository. 
 
 2. Train and evaluate models
-The train_resnet.ipynb and train_xception.ipynb file contains the code for preprocessing the dataset and training the ResNet50 and Xception models as well as the GRADCam visualization for both models.
-
-The model.py file contains the code for building the Resnet50 and Xception models. The eval_resnet.ipynb and eval_xception.ipynb notebook contains the code for evaluating the models.
+- The train_resnet.ipynb and train_xception.ipynb file contains the code for preprocessing the dataset and training the ResNet50 and Xception models as well as the GRADCam visualization for both models.
+- The model.py file contains the code for building the Resnet50 and Xception models. The eval_resnet.ipynb and eval_xception.ipynb notebook contains the code for evaluating the models.
 
 3. Visualize GradCAM
 The cam.py file contains the code for implementing GradCAM. Both training and validation notebooks contains GRADcam visualization for last layers of the models.

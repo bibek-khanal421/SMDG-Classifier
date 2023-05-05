@@ -1,0 +1,506 @@
+2023-05-05 01:16:19,134 INFO    StreamThr :24928 [internal.py:wandb_internal():86] W&B internal server running at pid: 24928, started at: 2023-05-05 01:16:19.134002
+2023-05-05 01:16:19,136 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status
+2023-05-05 01:16:19,153 INFO    WriterThread:24928 [datastore.py:open_for_write():85] open: f:\Glaucoma\wandb\run-20230505_011619-0x001\run-0x001.wandb
+2023-05-05 01:16:19,154 DEBUG   SenderThread:24928 [sender.py:send():375] send: header
+2023-05-05 01:16:19,560 DEBUG   SenderThread:24928 [sender.py:send():375] send: run
+2023-05-05 01:16:19,564 INFO    SenderThread:24928 [sender.py:_maybe_setup_resume():761] checking resume status for None/Glaucoma Detection/0x001
+2023-05-05 01:16:20,008 INFO    SenderThread:24928 [sender.py:_maybe_setup_resume():833] configured resuming with: ResumeState(resumed=True,step=1953,history=1953,events=127,output=65,runtime=3843.16454,wandb_runtime=None,summary={'_timestamp': 1683228539.084668, 'GRADCam Visual': {'_type': 'image-file', 'width': 256, 'format': 'png', 'height': 256, 'sha256': 'ba2de1f452a86272ba1f66e3dc47bccb64004713513c0804151453fe6f78dc3c', 'caption': 'Predicted label: [[0.]] \nActual label: 0', 'path': 'media/images/GRADCam Visual_1952_ba2de1f452a86272ba1f.png', 'size': 65391}, '_step': 1952, '_runtime': 3765.6323368549342},config={'beta1': {'desc': None, 'value': 0.9}, 'Models': {'desc': None, 'value': 'Xception'}, '_wandb': {'desc': None, 'value': {'m': [{'1': 'batch/batch_step', '6': [3]}, {'1': 'batch/loss', '5': 1, '6': [1]}, {'1': 'batch/accuracy', '5': 1, '6': [1]}, {'1': 'batch/learning_rate', '5': 1, '6': [1]}], 't': {'1': [2, 3, 5, 53, 55], '2': [2, 3, 5, 53, 55], '3': [7, 13, 14, 16, 23, 37, 38], '4': '3.9.12', '5': '0.15.1', '8': [1, 3, 5]}, 'framework': 'keras', 'start_time': 1683224773.452331, 'cli_version': '0.15.1', 'is_jupyter_run': True, 'python_version': '3.9.12', 'is_kaggle_kernel': False}}, 'Dataset': {'desc': None, 'value': 'Glaucoma'}, 'metrics': {'desc': None, 'value': ['accuracy']}, 'learning_rate': {'desc': None, 'value': 0.001}})
+2023-05-05 01:16:20,714 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: check_version
+2023-05-05 01:16:20,716 INFO    SenderThread:24928 [dir_watcher.py:__init__():219] watching files in: f:\Glaucoma\wandb\run-20230505_011619-0x001\files
+2023-05-05 01:16:20,716 INFO    SenderThread:24928 [sender.py:_start_run_threads():1124] run started: 0x001 with start time 1683224835.969462
+2023-05-05 01:16:20,716 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 01:16:20,717 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:16:20,718 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: check_version
+2023-05-05 01:16:21,251 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: run_start
+2023-05-05 01:16:21,294 DEBUG   HandlerThread:24928 [system_info.py:__init__():31] System info init
+2023-05-05 01:16:21,294 DEBUG   HandlerThread:24928 [system_info.py:__init__():46] System info init done
+2023-05-05 01:16:21,294 INFO    HandlerThread:24928 [system_monitor.py:start():181] Starting system monitor
+2023-05-05 01:16:21,295 INFO    SystemMonitor:24928 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-05 01:16:21,301 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started cpu monitoring
+2023-05-05 01:16:21,302 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started disk monitoring
+2023-05-05 01:16:21,303 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started gpu monitoring
+2023-05-05 01:16:21,304 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started memory monitoring
+2023-05-05 01:16:21,324 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started network monitoring
+2023-05-05 01:16:21,365 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:16:21,365 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:16:21,371 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: pause
+2023-05-05 01:16:21,371 INFO    HandlerThread:24928 [handler.py:handle_request_pause():719] stopping system metrics thread or process
+2023-05-05 01:16:21,371 INFO    HandlerThread:24928 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-05 01:16:21,371 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-05 01:16:21,383 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-05 01:16:21,383 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined disk monitor
+2023-05-05 01:16:21,384 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-05 01:16:21,384 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-05 01:16:21,474 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-05 01:16:21,474 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined memory monitor
+2023-05-05 01:16:21,474 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined network monitor
+2023-05-05 01:16:21,474 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: resume
+2023-05-05 01:16:21,475 INFO    HandlerThread:24928 [handler.py:handle_request_resume():710] starting system metrics thread or process
+2023-05-05 01:16:21,475 INFO    HandlerThread:24928 [system_monitor.py:start():181] Starting system monitor
+2023-05-05 01:16:21,475 INFO    SystemMonitor:24928 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-05 01:16:21,475 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: pause
+2023-05-05 01:16:21,475 INFO    HandlerThread:24928 [handler.py:handle_request_pause():719] stopping system metrics thread or process
+2023-05-05 01:16:21,482 INFO    HandlerThread:24928 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-05 01:16:21,482 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started cpu monitoring
+2023-05-05 01:16:21,482 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-05 01:16:21,482 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-05 01:16:21,483 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-05 01:16:21,483 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-05 01:16:21,605 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: resume
+2023-05-05 01:16:21,605 INFO    HandlerThread:24928 [handler.py:handle_request_resume():710] starting system metrics thread or process
+2023-05-05 01:16:21,605 INFO    HandlerThread:24928 [system_monitor.py:start():181] Starting system monitor
+2023-05-05 01:16:21,606 INFO    SystemMonitor:24928 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-05 01:16:21,643 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started cpu monitoring
+2023-05-05 01:16:21,644 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started disk monitoring
+2023-05-05 01:16:21,645 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started gpu monitoring
+2023-05-05 01:16:21,646 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started memory monitoring
+2023-05-05 01:16:21,670 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started network monitoring
+2023-05-05 01:16:21,684 DEBUG   SenderThread:24928 [sender.py:send():375] send: telemetry
+2023-05-05 01:16:21,684 DEBUG   SenderThread:24928 [sender.py:send():375] send: stats
+2023-05-05 01:16:21,685 DEBUG   SenderThread:24928 [sender.py:send():375] send: stats
+2023-05-05 01:16:21,722 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:16:23,492 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: pause
+2023-05-05 01:16:23,492 INFO    HandlerThread:24928 [handler.py:handle_request_pause():719] stopping system metrics thread or process
+2023-05-05 01:16:23,492 INFO    HandlerThread:24928 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-05 01:16:23,503 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-05 01:16:23,503 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-05 01:16:23,503 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-05 01:16:23,504 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined disk monitor
+2023-05-05 01:16:23,504 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-05 01:16:23,577 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-05 01:16:23,578 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined memory monitor
+2023-05-05 01:16:23,578 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined network monitor
+2023-05-05 01:16:23,578 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: resume
+2023-05-05 01:16:23,578 INFO    HandlerThread:24928 [handler.py:handle_request_resume():710] starting system metrics thread or process
+2023-05-05 01:16:23,579 DEBUG   SenderThread:24928 [sender.py:send():375] send: stats
+2023-05-05 01:16:23,579 INFO    HandlerThread:24928 [system_monitor.py:start():181] Starting system monitor
+2023-05-05 01:16:23,580 INFO    SystemMonitor:24928 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-05 01:16:23,585 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started cpu monitoring
+2023-05-05 01:16:23,586 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started disk monitoring
+2023-05-05 01:16:23,587 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started gpu monitoring
+2023-05-05 01:16:23,588 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started memory monitoring
+2023-05-05 01:16:23,606 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started network monitoring
+2023-05-05 01:16:24,426 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:16:24,738 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log
+2023-05-05 01:16:26,765 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log
+2023-05-05 01:16:29,470 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:16:32,799 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log
+2023-05-05 01:16:33,381 DEBUG   SenderThread:24928 [sender.py:send():375] send: files
+2023-05-05 01:16:33,381 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file media\images\GRADCam Visual_1953_eff7397baba595e6460b.png with policy now
+2023-05-05 01:16:33,381 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 01:16:33,383 DEBUG   SenderThread:24928 [sender.py:send():375] send: history
+2023-05-05 01:16:33,383 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 01:16:33,384 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:16:33,807 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:16:33,809 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1953_eff7397baba595e6460b.png
+2023-05-05 01:16:33,809 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images
+2023-05-05 01:16:33,809 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media
+2023-05-05 01:16:34,442 INFO    wandb-upload_0:24928 [upload_job.py:push():137] Uploaded file C:\Users\Anton\AppData\Local\Temp\tmp193d2ujywandb\5tbilbvp-media/images/GRADCam Visual_1953_eff7397baba595e6460b.png
+2023-05-05 01:16:34,809 DEBUG   SenderThread:24928 [sender.py:send():375] send: files
+2023-05-05 01:16:34,809 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file media\images\GRADCam Visual_1954_383bd830fc3427b92939.png with policy now
+2023-05-05 01:16:34,809 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 01:16:34,811 DEBUG   SenderThread:24928 [sender.py:send():375] send: history
+2023-05-05 01:16:34,812 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:16:34,812 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 01:16:34,814 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:16:34,815 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log
+2023-05-05 01:16:34,816 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1954_383bd830fc3427b92939.png
+2023-05-05 01:16:34,816 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images
+2023-05-05 01:16:35,694 INFO    wandb-upload_0:24928 [upload_job.py:push():137] Uploaded file C:\Users\Anton\AppData\Local\Temp\tmp193d2ujywandb\6uvyp0pf-media/images/GRADCam Visual_1954_383bd830fc3427b92939.png
+2023-05-05 01:16:35,825 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:16:36,370 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:16:36,371 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:16:36,373 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 01:16:36,374 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: pause
+2023-05-05 01:16:36,374 INFO    HandlerThread:24928 [handler.py:handle_request_pause():719] stopping system metrics thread or process
+2023-05-05 01:16:36,374 INFO    HandlerThread:24928 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-05 01:16:36,375 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-05 01:16:36,375 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-05 01:16:36,386 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-05 01:16:36,387 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined disk monitor
+2023-05-05 01:16:36,387 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-05 01:16:36,480 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-05 01:16:36,480 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined memory monitor
+2023-05-05 01:16:36,480 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined network monitor
+2023-05-05 01:16:36,693 DEBUG   SenderThread:24928 [sender.py:send():375] send: files
+2023-05-05 01:16:36,694 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file media\images\GRADCam Visual_1955_d3e621c74f14f0a0bbd7.png with policy now
+2023-05-05 01:16:36,694 DEBUG   SenderThread:24928 [sender.py:send():375] send: history
+2023-05-05 01:16:36,695 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 01:16:36,695 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:16:36,696 DEBUG   SenderThread:24928 [sender.py:send():375] send: stats
+2023-05-05 01:16:36,836 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log
+2023-05-05 01:16:36,836 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:16:36,836 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1955_d3e621c74f14f0a0bbd7.png
+2023-05-05 01:16:36,838 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images
+2023-05-05 01:16:37,678 INFO    wandb-upload_0:24928 [upload_job.py:push():137] Uploaded file C:\Users\Anton\AppData\Local\Temp\tmp193d2ujywandb\lhlbca7v-media/images/GRADCam Visual_1955_d3e621c74f14f0a0bbd7.png
+2023-05-05 01:16:40,728 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:16:45,762 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:16:50,791 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:16:51,376 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:16:51,377 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:16:51,935 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\config.yaml
+2023-05-05 01:16:56,747 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:17:01,799 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:17:06,379 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:17:06,379 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:17:07,714 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:17:12,733 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:17:17,768 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:17:21,383 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:17:21,384 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:17:23,758 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:17:28,787 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:17:33,830 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:17:36,389 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:17:36,390 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:17:39,729 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:17:44,766 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:17:49,794 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:17:51,401 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:17:51,402 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:17:55,756 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:18:00,823 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:18:05,881 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:18:06,408 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:18:06,410 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:18:11,753 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:18:16,784 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:18:21,425 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:18:21,426 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:18:22,748 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:18:27,769 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:18:32,796 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:18:36,438 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:18:36,438 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:18:38,773 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:18:43,813 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:18:48,854 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:18:51,443 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:18:51,443 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:18:54,787 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:18:59,828 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:19:04,860 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:19:06,462 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:19:06,462 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:19:10,830 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:19:15,879 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:19:20,901 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:19:21,467 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:19:21,467 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:19:26,832 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:19:30,432 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: resume
+2023-05-05 01:19:30,432 INFO    HandlerThread:24928 [handler.py:handle_request_resume():710] starting system metrics thread or process
+2023-05-05 01:19:30,432 INFO    HandlerThread:24928 [system_monitor.py:start():181] Starting system monitor
+2023-05-05 01:19:30,432 INFO    SystemMonitor:24928 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-05 01:19:30,448 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started cpu monitoring
+2023-05-05 01:19:30,448 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started disk monitoring
+2023-05-05 01:19:30,448 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started gpu monitoring
+2023-05-05 01:19:30,448 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started memory monitoring
+2023-05-05 01:19:30,458 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started network monitoring
+2023-05-05 01:19:32,226 DEBUG   SenderThread:24928 [sender.py:send():375] send: files
+2023-05-05 01:19:32,227 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 01:19:32,227 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file media\images\GRADCam Visual_1956_f589ec9a80979f1ffe46.png with policy now
+2023-05-05 01:19:32,228 DEBUG   SenderThread:24928 [sender.py:send():375] send: history
+2023-05-05 01:19:32,229 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:19:32,229 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 01:19:32,233 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:19:33,081 INFO    wandb-upload_0:24928 [upload_job.py:push():137] Uploaded file C:\Users\Anton\AppData\Local\Temp\tmp193d2ujywandb\p1b9dt25-media/images/GRADCam Visual_1956_f589ec9a80979f1ffe46.png
+2023-05-05 01:19:33,180 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log
+2023-05-05 01:19:33,180 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:19:33,181 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1956_f589ec9a80979f1ffe46.png
+2023-05-05 01:19:33,181 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images
+2023-05-05 01:19:33,660 DEBUG   SenderThread:24928 [sender.py:send():375] send: files
+2023-05-05 01:19:33,661 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 01:19:33,661 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file media\images\GRADCam Visual_1957_b52652b84c92dfba56c6.png with policy now
+2023-05-05 01:19:33,663 DEBUG   SenderThread:24928 [sender.py:send():375] send: history
+2023-05-05 01:19:33,663 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 01:19:33,664 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:19:34,188 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:19:34,188 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1957_b52652b84c92dfba56c6.png
+2023-05-05 01:19:34,189 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images
+2023-05-05 01:19:34,581 INFO    wandb-upload_0:24928 [upload_job.py:push():137] Uploaded file C:\Users\Anton\AppData\Local\Temp\tmp193d2ujywandb\4shuxpr2-media/images/GRADCam Visual_1957_b52652b84c92dfba56c6.png
+2023-05-05 01:19:35,127 DEBUG   SenderThread:24928 [sender.py:send():375] send: files
+2023-05-05 01:19:35,127 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 01:19:35,127 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file media\images\GRADCam Visual_1958_be03d9a6d91b3e6f8f50.png with policy now
+2023-05-05 01:19:35,129 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: pause
+2023-05-05 01:19:35,129 INFO    HandlerThread:24928 [handler.py:handle_request_pause():719] stopping system metrics thread or process
+2023-05-05 01:19:35,129 INFO    HandlerThread:24928 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-05 01:19:35,130 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-05 01:19:35,130 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-05 01:19:35,141 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-05 01:19:35,142 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined disk monitor
+2023-05-05 01:19:35,142 DEBUG   SenderThread:24928 [sender.py:send():375] send: history
+2023-05-05 01:19:35,142 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-05 01:19:35,143 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 01:19:35,144 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:19:35,196 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log
+2023-05-05 01:19:35,197 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:19:35,197 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1958_be03d9a6d91b3e6f8f50.png
+2023-05-05 01:19:35,197 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images
+2023-05-05 01:19:35,224 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-05 01:19:35,224 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined memory monitor
+2023-05-05 01:19:35,225 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined network monitor
+2023-05-05 01:19:35,225 DEBUG   SenderThread:24928 [sender.py:send():375] send: stats
+2023-05-05 01:19:36,032 INFO    wandb-upload_0:24928 [upload_job.py:push():137] Uploaded file C:\Users\Anton\AppData\Local\Temp\tmp193d2ujywandb\dc1l3r9l-media/images/GRADCam Visual_1958_be03d9a6d91b3e6f8f50.png
+2023-05-05 01:19:36,500 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:19:36,500 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:19:37,833 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:19:42,870 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: resume
+2023-05-05 01:19:42,870 INFO    HandlerThread:24928 [handler.py:handle_request_resume():710] starting system metrics thread or process
+2023-05-05 01:19:42,871 INFO    HandlerThread:24928 [system_monitor.py:start():181] Starting system monitor
+2023-05-05 01:19:42,871 INFO    SystemMonitor:24928 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-05 01:19:42,878 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started cpu monitoring
+2023-05-05 01:19:42,879 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:19:42,879 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started disk monitoring
+2023-05-05 01:19:42,880 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started gpu monitoring
+2023-05-05 01:19:42,881 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started memory monitoring
+2023-05-05 01:19:42,897 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started network monitoring
+2023-05-05 01:19:44,785 DEBUG   SenderThread:24928 [sender.py:send():375] send: files
+2023-05-05 01:19:44,785 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 01:19:44,786 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file media\images\GRADCam Visual_1959_c0056a46bf4b45740b87.png with policy now
+2023-05-05 01:19:44,787 DEBUG   SenderThread:24928 [sender.py:send():375] send: history
+2023-05-05 01:19:44,787 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 01:19:44,787 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:19:45,266 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log
+2023-05-05 01:19:45,266 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:19:45,267 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1959_c0056a46bf4b45740b87.png
+2023-05-05 01:19:45,267 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images
+2023-05-05 01:19:45,642 INFO    wandb-upload_0:24928 [upload_job.py:push():137] Uploaded file C:\Users\Anton\AppData\Local\Temp\tmp193d2ujywandb\7jv297nv-media/images/GRADCam Visual_1959_c0056a46bf4b45740b87.png
+2023-05-05 01:19:46,167 DEBUG   SenderThread:24928 [sender.py:send():375] send: files
+2023-05-05 01:19:46,167 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 01:19:46,167 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file media\images\GRADCam Visual_1960_754b21a5e167fe3aa973.png with policy now
+2023-05-05 01:19:46,170 DEBUG   SenderThread:24928 [sender.py:send():375] send: history
+2023-05-05 01:19:46,170 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 01:19:46,171 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:19:46,282 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:19:46,282 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1960_754b21a5e167fe3aa973.png
+2023-05-05 01:19:46,283 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images
+2023-05-05 01:19:47,045 INFO    wandb-upload_0:24928 [upload_job.py:push():137] Uploaded file C:\Users\Anton\AppData\Local\Temp\tmp193d2ujywandb\zae3umn5-media/images/GRADCam Visual_1960_754b21a5e167fe3aa973.png
+2023-05-05 01:19:47,292 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log
+2023-05-05 01:19:47,501 DEBUG   SenderThread:24928 [sender.py:send():375] send: files
+2023-05-05 01:19:47,502 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 01:19:47,502 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file media\images\GRADCam Visual_1961_34a80f7ee9176745c0f0.png with policy now
+2023-05-05 01:19:47,502 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: pause
+2023-05-05 01:19:47,503 INFO    HandlerThread:24928 [handler.py:handle_request_pause():719] stopping system metrics thread or process
+2023-05-05 01:19:47,503 INFO    HandlerThread:24928 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-05 01:19:47,504 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-05 01:19:47,504 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-05 01:19:47,513 DEBUG   SenderThread:24928 [sender.py:send():375] send: history
+2023-05-05 01:19:47,514 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-05 01:19:47,514 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined disk monitor
+2023-05-05 01:19:47,514 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 01:19:47,515 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-05 01:19:47,517 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:19:47,582 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-05 01:19:47,582 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined memory monitor
+2023-05-05 01:19:47,582 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined network monitor
+2023-05-05 01:19:47,583 DEBUG   SenderThread:24928 [sender.py:send():375] send: stats
+2023-05-05 01:19:48,300 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:19:48,300 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1961_34a80f7ee9176745c0f0.png
+2023-05-05 01:19:48,300 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images
+2023-05-05 01:19:48,422 INFO    wandb-upload_0:24928 [upload_job.py:push():137] Uploaded file C:\Users\Anton\AppData\Local\Temp\tmp193d2ujywandb\imqfasuv-media/images/GRADCam Visual_1961_34a80f7ee9176745c0f0.png
+2023-05-05 01:19:48,596 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:19:51,504 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:19:51,504 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:19:53,843 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:19:54,877 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: resume
+2023-05-05 01:19:54,877 INFO    HandlerThread:24928 [handler.py:handle_request_resume():710] starting system metrics thread or process
+2023-05-05 01:19:54,877 INFO    HandlerThread:24928 [system_monitor.py:start():181] Starting system monitor
+2023-05-05 01:19:54,879 INFO    SystemMonitor:24928 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-05 01:19:54,886 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started cpu monitoring
+2023-05-05 01:19:54,887 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started disk monitoring
+2023-05-05 01:19:54,887 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started gpu monitoring
+2023-05-05 01:19:54,889 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started memory monitoring
+2023-05-05 01:19:54,907 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started network monitoring
+2023-05-05 01:19:56,792 DEBUG   SenderThread:24928 [sender.py:send():375] send: files
+2023-05-05 01:19:56,793 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 01:19:56,793 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file media\images\GRADCam Visual_1962_d76936ad9f4074f6733f.png with policy now
+2023-05-05 01:19:56,794 DEBUG   SenderThread:24928 [sender.py:send():375] send: history
+2023-05-05 01:19:56,794 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 01:19:56,795 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:19:57,413 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log
+2023-05-05 01:19:57,414 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:19:57,414 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1962_d76936ad9f4074f6733f.png
+2023-05-05 01:19:57,415 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images
+2023-05-05 01:19:57,650 INFO    wandb-upload_0:24928 [upload_job.py:push():137] Uploaded file C:\Users\Anton\AppData\Local\Temp\tmp193d2ujywandb\0xg2ukis-media/images/GRADCam Visual_1962_d76936ad9f4074f6733f.png
+2023-05-05 01:19:58,557 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 01:19:58,557 DEBUG   SenderThread:24928 [sender.py:send():375] send: files
+2023-05-05 01:19:58,558 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file media\images\GRADCam Visual_1963_e73a065b19f2efb34e01.png with policy now
+2023-05-05 01:19:58,558 DEBUG   SenderThread:24928 [sender.py:send():375] send: history
+2023-05-05 01:19:58,559 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 01:19:58,560 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:19:58,872 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:19:59,432 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log
+2023-05-05 01:19:59,432 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:19:59,432 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1963_e73a065b19f2efb34e01.png
+2023-05-05 01:19:59,432 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images
+2023-05-05 01:19:59,541 INFO    wandb-upload_0:24928 [upload_job.py:push():137] Uploaded file C:\Users\Anton\AppData\Local\Temp\tmp193d2ujywandb\mrbanvqi-media/images/GRADCam Visual_1963_e73a065b19f2efb34e01.png
+2023-05-05 01:19:59,928 DEBUG   SenderThread:24928 [sender.py:send():375] send: files
+2023-05-05 01:19:59,928 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-05 01:19:59,928 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file media\images\GRADCam Visual_1964_a0c56f79dec37fcff1d8.png with policy now
+2023-05-05 01:19:59,929 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: pause
+2023-05-05 01:19:59,929 INFO    HandlerThread:24928 [handler.py:handle_request_pause():719] stopping system metrics thread or process
+2023-05-05 01:19:59,930 INFO    HandlerThread:24928 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-05 01:19:59,930 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-05 01:19:59,941 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined disk monitor
+2023-05-05 01:19:59,941 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-05 01:19:59,942 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-05 01:19:59,942 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-05 01:19:59,942 DEBUG   SenderThread:24928 [sender.py:send():375] send: history
+2023-05-05 01:19:59,943 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: summary_record
+2023-05-05 01:19:59,944 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:20:00,015 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-05 01:20:00,015 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined memory monitor
+2023-05-05 01:20:00,015 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined network monitor
+2023-05-05 01:20:00,016 DEBUG   SenderThread:24928 [sender.py:send():375] send: stats
+2023-05-05 01:20:00,447 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:20:00,448 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1964_a0c56f79dec37fcff1d8.png
+2023-05-05 01:20:00,448 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images
+2023-05-05 01:20:00,808 INFO    wandb-upload_0:24928 [upload_job.py:push():137] Uploaded file C:\Users\Anton\AppData\Local\Temp\tmp193d2ujywandb\pxcwuxbb-media/images/GRADCam Visual_1964_a0c56f79dec37fcff1d8.png
+2023-05-05 01:20:01,456 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log
+2023-05-05 01:20:04,056 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:20:06,522 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-05 01:20:06,523 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: stop_status
+2023-05-05 01:20:06,909 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: resume
+2023-05-05 01:20:06,909 INFO    HandlerThread:24928 [handler.py:handle_request_resume():710] starting system metrics thread or process
+2023-05-05 01:20:06,910 INFO    HandlerThread:24928 [system_monitor.py:start():181] Starting system monitor
+2023-05-05 01:20:06,910 INFO    SystemMonitor:24928 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-05 01:20:06,920 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started cpu monitoring
+2023-05-05 01:20:06,920 DEBUG   SenderThread:24928 [sender.py:send():375] send: telemetry
+2023-05-05 01:20:06,921 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started disk monitoring
+2023-05-05 01:20:06,922 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started gpu monitoring
+2023-05-05 01:20:06,923 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started memory monitoring
+2023-05-05 01:20:06,944 INFO    SystemMonitor:24928 [interfaces.py:start():190] Started network monitoring
+2023-05-05 01:20:07,101 DEBUG   SenderThread:24928 [sender.py:send():375] send: exit
+2023-05-05 01:20:07,101 INFO    SenderThread:24928 [sender.py:send_exit():598] handling exit code: 0
+2023-05-05 01:20:07,101 INFO    SenderThread:24928 [sender.py:send_exit():600] handling runtime: 29
+2023-05-05 01:20:07,103 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:20:07,104 INFO    SenderThread:24928 [sender.py:send_exit():606] send defer
+2023-05-05 01:20:07,104 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:07,104 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-05 01:20:07,105 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:07,105 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-05-05 01:20:07,105 INFO    SenderThread:24928 [sender.py:transition_state():626] send defer: 1
+2023-05-05 01:20:07,105 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:07,105 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-05 01:20:07,105 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:07,106 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-05-05 01:20:07,106 INFO    SenderThread:24928 [sender.py:transition_state():626] send defer: 2
+2023-05-05 01:20:07,106 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:07,106 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-05 01:20:07,106 INFO    HandlerThread:24928 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-05 01:20:07,106 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-05 01:20:07,106 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-05 01:20:07,116 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined disk monitor
+2023-05-05 01:20:07,117 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-05 01:20:07,117 DEBUG   SystemMonitor:24928 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-05 01:20:07,188 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-05 01:20:07,188 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined memory monitor
+2023-05-05 01:20:07,188 INFO    HandlerThread:24928 [interfaces.py:finish():202] Joined network monitor
+2023-05-05 01:20:07,189 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:07,189 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-05-05 01:20:07,189 INFO    SenderThread:24928 [sender.py:transition_state():626] send defer: 3
+2023-05-05 01:20:07,189 DEBUG   SenderThread:24928 [sender.py:send():375] send: stats
+2023-05-05 01:20:07,189 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:07,190 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-05 01:20:07,190 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:07,190 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-05-05 01:20:07,190 INFO    SenderThread:24928 [sender.py:transition_state():626] send defer: 4
+2023-05-05 01:20:07,191 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:07,191 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-05 01:20:07,191 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:07,191 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-05-05 01:20:07,192 INFO    SenderThread:24928 [sender.py:transition_state():626] send defer: 5
+2023-05-05 01:20:07,192 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:07,192 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-05 01:20:07,192 DEBUG   SenderThread:24928 [sender.py:send():375] send: summary
+2023-05-05 01:20:07,193 INFO    SenderThread:24928 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-05 01:20:07,193 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:07,194 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-05-05 01:20:07,194 INFO    SenderThread:24928 [sender.py:transition_state():626] send defer: 6
+2023-05-05 01:20:07,194 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:07,194 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-05 01:20:07,194 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:07,195 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-05-05 01:20:07,200 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: status_report
+2023-05-05 01:20:07,521 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:20:07,625 INFO    SenderThread:24928 [sender.py:transition_state():626] send defer: 7
+2023-05-05 01:20:07,626 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:07,626 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-05 01:20:07,626 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:07,626 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-05-05 01:20:08,114 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-05 01:20:08,523 INFO    Thread-16 :24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\config.yaml
+2023-05-05 01:20:09,281 INFO    SenderThread:24928 [sender.py:transition_state():626] send defer: 8
+2023-05-05 01:20:09,282 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: poll_exit
+2023-05-05 01:20:09,282 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:09,282 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 8
+2023-05-05 01:20:09,283 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:09,283 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-05-05 01:20:09,283 INFO    SenderThread:24928 [sender.py:transition_state():626] send defer: 9
+2023-05-05 01:20:09,284 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:09,284 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 9
+2023-05-05 01:20:09,284 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:09,284 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-05-05 01:20:09,284 INFO    SenderThread:24928 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-05 01:20:09,540 INFO    SenderThread:24928 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log
+2023-05-05 01:20:09,540 INFO    SenderThread:24928 [dir_watcher.py:finish():395] scan: f:\Glaucoma\wandb\run-20230505_011619-0x001\files
+2023-05-05 01:20:09,540 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\config.yaml config.yaml
+2023-05-05 01:20:09,541 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log output.log
+2023-05-05 01:20:09,544 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json wandb-summary.json
+2023-05-05 01:20:09,555 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1953_eff7397baba595e6460b.png media\images\GRADCam Visual_1953_eff7397baba595e6460b.png
+2023-05-05 01:20:09,556 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1954_383bd830fc3427b92939.png media\images\GRADCam Visual_1954_383bd830fc3427b92939.png
+2023-05-05 01:20:09,556 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1955_d3e621c74f14f0a0bbd7.png media\images\GRADCam Visual_1955_d3e621c74f14f0a0bbd7.png
+2023-05-05 01:20:09,557 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1956_f589ec9a80979f1ffe46.png media\images\GRADCam Visual_1956_f589ec9a80979f1ffe46.png
+2023-05-05 01:20:09,557 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1957_b52652b84c92dfba56c6.png media\images\GRADCam Visual_1957_b52652b84c92dfba56c6.png
+2023-05-05 01:20:09,557 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1958_be03d9a6d91b3e6f8f50.png media\images\GRADCam Visual_1958_be03d9a6d91b3e6f8f50.png
+2023-05-05 01:20:09,557 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1959_c0056a46bf4b45740b87.png media\images\GRADCam Visual_1959_c0056a46bf4b45740b87.png
+2023-05-05 01:20:09,557 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1960_754b21a5e167fe3aa973.png media\images\GRADCam Visual_1960_754b21a5e167fe3aa973.png
+2023-05-05 01:20:09,557 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1961_34a80f7ee9176745c0f0.png media\images\GRADCam Visual_1961_34a80f7ee9176745c0f0.png
+2023-05-05 01:20:09,558 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1962_d76936ad9f4074f6733f.png media\images\GRADCam Visual_1962_d76936ad9f4074f6733f.png
+2023-05-05 01:20:09,558 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1963_e73a065b19f2efb34e01.png media\images\GRADCam Visual_1963_e73a065b19f2efb34e01.png
+2023-05-05 01:20:09,558 INFO    SenderThread:24928 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230505_011619-0x001\files\media\images\GRADCam Visual_1964_a0c56f79dec37fcff1d8.png media\images\GRADCam Visual_1964_a0c56f79dec37fcff1d8.png
+2023-05-05 01:20:09,558 INFO    SenderThread:24928 [sender.py:transition_state():626] send defer: 10
+2023-05-05 01:20:09,558 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:09,558 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 10
+2023-05-05 01:20:09,560 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:09,560 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-05-05 01:20:09,560 INFO    SenderThread:24928 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-05 01:20:10,442 INFO    wandb-upload_0:24928 [upload_job.py:push():137] Uploaded file f:\Glaucoma\wandb\run-20230505_011619-0x001\files\config.yaml
+2023-05-05 01:20:10,717 INFO    wandb-upload_2:24928 [upload_job.py:push():137] Uploaded file f:\Glaucoma\wandb\run-20230505_011619-0x001\files\wandb-summary.json
+2023-05-05 01:20:10,721 INFO    wandb-upload_1:24928 [upload_job.py:push():137] Uploaded file f:\Glaucoma\wandb\run-20230505_011619-0x001\files\output.log
+2023-05-05 01:20:10,927 INFO    Thread-15 :24928 [sender.py:transition_state():626] send defer: 11
+2023-05-05 01:20:10,927 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:10,927 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 11
+2023-05-05 01:20:10,928 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:10,928 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-05-05 01:20:10,928 INFO    SenderThread:24928 [file_pusher.py:join():172] waiting for file pusher
+2023-05-05 01:20:10,928 INFO    SenderThread:24928 [sender.py:transition_state():626] send defer: 12
+2023-05-05 01:20:10,928 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:10,928 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 12
+2023-05-05 01:20:10,929 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:10,929 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-05-05 01:20:12,019 INFO    SenderThread:24928 [sender.py:transition_state():626] send defer: 13
+2023-05-05 01:20:12,019 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:12,019 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 13
+2023-05-05 01:20:12,020 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:12,020 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-05-05 01:20:12,020 INFO    SenderThread:24928 [sender.py:transition_state():626] send defer: 14
+2023-05-05 01:20:12,021 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: defer
+2023-05-05 01:20:12,021 DEBUG   SenderThread:24928 [sender.py:send():375] send: final
+2023-05-05 01:20:12,021 INFO    HandlerThread:24928 [handler.py:handle_request_defer():170] handle defer: 14
+2023-05-05 01:20:12,021 DEBUG   SenderThread:24928 [sender.py:send():375] send: footer
+2023-05-05 01:20:12,021 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: defer
+2023-05-05 01:20:12,022 INFO    SenderThread:24928 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-05-05 01:20:12,023 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-05 01:20:12,023 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: server_info
+2023-05-05 01:20:12,023 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: get_summary
+2023-05-05 01:20:12,024 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: sampled_history
+2023-05-05 01:20:12,024 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: poll_exit
+2023-05-05 01:20:12,024 DEBUG   SenderThread:24928 [sender.py:send_request():402] send_request: server_info
+2023-05-05 01:20:12,686 DEBUG   HandlerThread:24928 [handler.py:handle_request():144] handle_request: shutdown
+2023-05-05 01:20:12,686 INFO    HandlerThread:24928 [handler.py:finish():845] shutting down handler
+2023-05-05 01:20:13,027 INFO    WriterThread:24928 [datastore.py:close():298] close: f:\Glaucoma\wandb\run-20230505_011619-0x001\run-0x001.wandb
+2023-05-05 01:20:13,698 INFO    SenderThread:24928 [sender.py:finish():1550] shutting down sender
+2023-05-05 01:20:13,698 INFO    SenderThread:24928 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-05 01:20:13,698 INFO    SenderThread:24928 [file_pusher.py:join():172] waiting for file pusher

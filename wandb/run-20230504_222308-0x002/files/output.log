@@ -1,0 +1,116 @@
+Epoch 1/50
+WARNING:tensorflow:AutoGraph could not transform <function Model.make_train_function.<locals>.train_function at 0x000001E386935AF0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: cannot import name 'soft_unicode' from 'markupsafe' (c:\Users\Anton\anaconda3\envs\ML\lib\site-packages\markupsafe\__init__.py)
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING: AutoGraph could not transform <function Model.make_train_function.<locals>.train_function at 0x000001E386935AF0> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: cannot import name 'soft_unicode' from 'markupsafe' (c:\Users\Anton\anaconda3\envs\ML\lib\site-packages\markupsafe\__init__.py)
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+215/215 [==============================] - 274s 1s/step - loss: 0.3688 - accuracy: 0.8405 - val_loss: 1.6063 - val_accuracy: 0.6002
+Epoch 2/50
+
+
+
+
+
+
+

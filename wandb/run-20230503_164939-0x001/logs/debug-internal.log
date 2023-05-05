@@ -1,0 +1,244 @@
+2023-05-03 16:49:39,650 INFO    StreamThr :18100 [internal.py:wandb_internal():86] W&B internal server running at pid: 18100, started at: 2023-05-03 16:49:39.649106
+2023-05-03 16:49:39,652 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: status
+2023-05-03 16:49:39,670 INFO    WriterThread:18100 [datastore.py:open_for_write():85] open: f:\Glaucoma\wandb\run-20230503_164939-0x001\run-0x001.wandb
+2023-05-03 16:49:39,671 DEBUG   SenderThread:18100 [sender.py:send():375] send: header
+2023-05-03 16:49:39,689 DEBUG   SenderThread:18100 [sender.py:send():375] send: run
+2023-05-03 16:49:39,693 INFO    SenderThread:18100 [sender.py:_maybe_setup_resume():761] checking resume status for None/Glaucoma Detection/0x001
+2023-05-03 16:49:40,161 INFO    SenderThread:18100 [sender.py:_maybe_setup_resume():833] configured resuming with: ResumeState(resumed=True,step=3510,history=4753,events=85,output=41,runtime=1870,wandb_runtime=None,summary={'batch/batch_step': 3439, '_step': 3509, '_runtime': 1869.9527847766876, '_timestamp': 1683111706.5616217, 'batch/loss': 0.03607287257909775, 'batch/accuracy': 0.9858723878860474},config={'beta1': {'desc': None, 'value': 0.9}, 'Models': {'desc': None, 'value': 'Xception'}, '_wandb': {'desc': None, 'value': {'m': [{'1': 'batch/batch_step', '6': [3]}, {'1': 'batch/loss', '5': 1, '6': [1]}, {'1': 'batch/accuracy', '5': 1, '6': [1]}, {'1': 'batch/learning_rate', '5': 1, '6': [1]}], 't': {'1': [2, 3, 5, 53, 55], '2': [2, 3, 5, 53, 55], '3': [5, 7, 13, 14, 16, 23, 38], '4': '3.9.12', '5': '0.15.1', '8': [1, 3, 5]}, 'framework': 'keras', 'start_time': 1683109893.226704, 'cli_version': '0.15.1', 'is_jupyter_run': True, 'python_version': '3.9.12', 'is_kaggle_kernel': False}}, 'Dataset': {'desc': None, 'value': 'Glaucoma'}, 'metrics': {'desc': None, 'value': ['accuracy']}, 'learning_rate': {'desc': None, 'value': 0.001}})
+2023-05-03 16:49:40,910 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: check_version
+2023-05-03 16:49:40,913 INFO    SenderThread:18100 [dir_watcher.py:__init__():219] watching files in: f:\Glaucoma\wandb\run-20230503_164939-0x001\files
+2023-05-03 16:49:40,913 INFO    SenderThread:18100 [sender.py:_start_run_threads():1124] run started: 0x001 with start time 1683110009.651109
+2023-05-03 16:49:40,913 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: summary_record
+2023-05-03 16:49:40,913 INFO    SenderThread:18100 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-03 16:49:40,914 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: check_version
+2023-05-03 16:49:41,249 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: run_start
+2023-05-03 16:49:41,287 DEBUG   HandlerThread:18100 [system_info.py:__init__():31] System info init
+2023-05-03 16:49:41,287 DEBUG   HandlerThread:18100 [system_info.py:__init__():46] System info init done
+2023-05-03 16:49:41,287 INFO    HandlerThread:18100 [system_monitor.py:start():181] Starting system monitor
+2023-05-03 16:49:41,288 INFO    SystemMonitor:18100 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-03 16:49:41,293 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started cpu monitoring
+2023-05-03 16:49:41,295 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started disk monitoring
+2023-05-03 16:49:41,295 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started gpu monitoring
+2023-05-03 16:49:41,296 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started memory monitoring
+2023-05-03 16:49:41,312 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started network monitoring
+2023-05-03 16:49:41,346 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-03 16:49:41,346 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: stop_status
+2023-05-03 16:49:41,352 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: pause
+2023-05-03 16:49:41,352 INFO    HandlerThread:18100 [handler.py:handle_request_pause():719] stopping system metrics thread or process
+2023-05-03 16:49:41,352 INFO    HandlerThread:18100 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-03 16:49:41,353 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-03 16:49:41,353 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-03 16:49:41,368 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined disk monitor
+2023-05-03 16:49:41,368 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-03 16:49:41,369 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-03 16:49:41,440 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-03 16:49:41,440 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined memory monitor
+2023-05-03 16:49:41,441 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined network monitor
+2023-05-03 16:49:41,455 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: resume
+2023-05-03 16:49:41,455 INFO    HandlerThread:18100 [handler.py:handle_request_resume():710] starting system metrics thread or process
+2023-05-03 16:49:41,455 INFO    HandlerThread:18100 [system_monitor.py:start():181] Starting system monitor
+2023-05-03 16:49:41,456 INFO    SystemMonitor:18100 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-03 16:49:41,462 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started cpu monitoring
+2023-05-03 16:49:41,462 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: pause
+2023-05-03 16:49:41,463 INFO    HandlerThread:18100 [handler.py:handle_request_pause():719] stopping system metrics thread or process
+2023-05-03 16:49:41,463 INFO    HandlerThread:18100 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-03 16:49:41,463 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-03 16:49:41,464 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined disk monitor
+2023-05-03 16:49:41,464 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started disk monitoring
+2023-05-03 16:49:41,464 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-03 16:49:41,464 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-03 16:49:41,464 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-03 16:49:41,530 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: resume
+2023-05-03 16:49:41,530 INFO    HandlerThread:18100 [handler.py:handle_request_resume():710] starting system metrics thread or process
+2023-05-03 16:49:41,530 INFO    HandlerThread:18100 [system_monitor.py:start():181] Starting system monitor
+2023-05-03 16:49:41,531 INFO    SystemMonitor:18100 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-03 16:49:41,537 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started cpu monitoring
+2023-05-03 16:49:41,537 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: pause
+2023-05-03 16:49:41,538 INFO    HandlerThread:18100 [handler.py:handle_request_pause():719] stopping system metrics thread or process
+2023-05-03 16:49:41,538 INFO    HandlerThread:18100 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-03 16:49:41,538 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started disk monitoring
+2023-05-03 16:49:41,538 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-03 16:49:41,538 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-03 16:49:41,539 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined disk monitor
+2023-05-03 16:49:41,539 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-03 16:49:41,539 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-03 16:49:41,606 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: resume
+2023-05-03 16:49:41,606 INFO    HandlerThread:18100 [handler.py:handle_request_resume():710] starting system metrics thread or process
+2023-05-03 16:49:41,606 INFO    HandlerThread:18100 [system_monitor.py:start():181] Starting system monitor
+2023-05-03 16:49:41,607 INFO    SystemMonitor:18100 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-03 16:49:41,614 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started cpu monitoring
+2023-05-03 16:49:41,614 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started disk monitoring
+2023-05-03 16:49:41,615 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started gpu monitoring
+2023-05-03 16:49:41,615 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started memory monitoring
+2023-05-03 16:49:41,632 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started network monitoring
+2023-05-03 16:49:41,668 DEBUG   SenderThread:18100 [sender.py:send():375] send: telemetry
+2023-05-03 16:49:41,668 DEBUG   SenderThread:18100 [sender.py:send():375] send: stats
+2023-05-03 16:49:41,668 DEBUG   SenderThread:18100 [sender.py:send():375] send: stats
+2023-05-03 16:49:41,669 DEBUG   SenderThread:18100 [sender.py:send():375] send: stats
+2023-05-03 16:49:41,917 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\wandb-summary.json
+2023-05-03 16:49:44,417 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: pause
+2023-05-03 16:49:44,417 INFO    HandlerThread:18100 [handler.py:handle_request_pause():719] stopping system metrics thread or process
+2023-05-03 16:49:44,418 INFO    HandlerThread:18100 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-03 16:49:44,418 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-03 16:49:44,418 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-03 16:49:44,429 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-03 16:49:44,429 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined disk monitor
+2023-05-03 16:49:44,430 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-03 16:49:44,498 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-03 16:49:44,498 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined memory monitor
+2023-05-03 16:49:44,498 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined network monitor
+2023-05-03 16:49:44,499 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: resume
+2023-05-03 16:49:44,499 INFO    HandlerThread:18100 [handler.py:handle_request_resume():710] starting system metrics thread or process
+2023-05-03 16:49:44,499 DEBUG   SenderThread:18100 [sender.py:send():375] send: stats
+2023-05-03 16:49:44,499 INFO    HandlerThread:18100 [system_monitor.py:start():181] Starting system monitor
+2023-05-03 16:49:44,500 INFO    SystemMonitor:18100 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-05-03 16:49:44,507 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started cpu monitoring
+2023-05-03 16:49:44,508 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started disk monitoring
+2023-05-03 16:49:44,508 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started gpu monitoring
+2023-05-03 16:49:44,509 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started memory monitoring
+2023-05-03 16:49:44,525 INFO    SystemMonitor:18100 [interfaces.py:start():190] Started network monitoring
+2023-05-03 16:49:45,307 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: status_report
+2023-05-03 16:49:45,964 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_created():278] file/dir created: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\output.log
+2023-05-03 16:49:47,988 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\output.log
+2023-05-03 16:49:50,357 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: status_report
+2023-05-03 16:49:54,060 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\output.log
+2023-05-03 16:49:55,509 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: status_report
+2023-05-03 16:49:56,080 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\output.log
+2023-05-03 16:49:56,360 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: stop_status
+2023-05-03 16:49:56,361 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: stop_status
+2023-05-03 16:49:58,105 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\output.log
+2023-05-03 16:50:00,125 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\output.log
+2023-05-03 16:50:00,740 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: status_report
+2023-05-03 16:50:02,143 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\output.log
+2023-05-03 16:50:04,161 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\output.log
+2023-05-03 16:50:05,879 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: status_report
+2023-05-03 16:50:06,183 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\output.log
+2023-05-03 16:50:08,211 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\output.log
+2023-05-03 16:50:09,182 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: partial_history
+2023-05-03 16:50:09,183 DEBUG   SenderThread:18100 [sender.py:send():375] send: history
+2023-05-03 16:50:09,183 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: summary_record
+2023-05-03 16:50:09,184 INFO    SenderThread:18100 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-03 16:50:09,184 DEBUG   SenderThread:18100 [sender.py:send():375] send: telemetry
+2023-05-03 16:50:09,217 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\wandb-summary.json
+2023-05-03 16:50:09,333 DEBUG   SenderThread:18100 [sender.py:send():375] send: exit
+2023-05-03 16:50:09,333 INFO    SenderThread:18100 [sender.py:send_exit():598] handling exit code: 0
+2023-05-03 16:50:09,333 INFO    SenderThread:18100 [sender.py:send_exit():600] handling runtime: 27
+2023-05-03 16:50:09,334 INFO    SenderThread:18100 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-03 16:50:09,334 INFO    SenderThread:18100 [sender.py:send_exit():606] send defer
+2023-05-03 16:50:09,334 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:09,334 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 0
+2023-05-03 16:50:09,335 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:09,335 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 0
+2023-05-03 16:50:09,335 INFO    SenderThread:18100 [sender.py:transition_state():626] send defer: 1
+2023-05-03 16:50:09,335 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:09,335 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 1
+2023-05-03 16:50:09,335 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:09,335 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 1
+2023-05-03 16:50:09,336 INFO    SenderThread:18100 [sender.py:transition_state():626] send defer: 2
+2023-05-03 16:50:09,336 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:09,336 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 2
+2023-05-03 16:50:09,336 INFO    HandlerThread:18100 [system_monitor.py:finish():190] Stopping system monitor
+2023-05-03 16:50:09,346 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-05-03 16:50:09,347 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-05-03 16:50:09,347 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined cpu monitor
+2023-05-03 16:50:09,347 DEBUG   SystemMonitor:18100 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-05-03 16:50:09,347 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined disk monitor
+2023-05-03 16:50:09,422 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined gpu monitor
+2023-05-03 16:50:09,423 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined memory monitor
+2023-05-03 16:50:09,423 INFO    HandlerThread:18100 [interfaces.py:finish():202] Joined network monitor
+2023-05-03 16:50:09,423 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:09,424 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 2
+2023-05-03 16:50:09,424 INFO    SenderThread:18100 [sender.py:transition_state():626] send defer: 3
+2023-05-03 16:50:09,424 DEBUG   SenderThread:18100 [sender.py:send():375] send: stats
+2023-05-03 16:50:09,424 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:09,425 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 3
+2023-05-03 16:50:09,425 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:09,425 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 3
+2023-05-03 16:50:09,425 INFO    SenderThread:18100 [sender.py:transition_state():626] send defer: 4
+2023-05-03 16:50:09,425 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:09,425 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 4
+2023-05-03 16:50:09,426 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:09,426 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 4
+2023-05-03 16:50:09,426 INFO    SenderThread:18100 [sender.py:transition_state():626] send defer: 5
+2023-05-03 16:50:09,426 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:09,426 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 5
+2023-05-03 16:50:09,427 DEBUG   SenderThread:18100 [sender.py:send():375] send: summary
+2023-05-03 16:50:09,427 INFO    SenderThread:18100 [sender.py:_save_file():1378] saving file wandb-summary.json with policy end
+2023-05-03 16:50:09,428 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:09,428 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 5
+2023-05-03 16:50:09,428 INFO    SenderThread:18100 [sender.py:transition_state():626] send defer: 6
+2023-05-03 16:50:09,428 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:09,428 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 6
+2023-05-03 16:50:09,428 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:09,428 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 6
+2023-05-03 16:50:09,433 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: status_report
+2023-05-03 16:50:09,915 INFO    SenderThread:18100 [sender.py:transition_state():626] send defer: 7
+2023-05-03 16:50:09,915 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:09,915 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 7
+2023-05-03 16:50:09,915 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:09,915 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 7
+2023-05-03 16:50:10,226 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\wandb-summary.json
+2023-05-03 16:50:10,227 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\output.log
+2023-05-03 16:50:10,227 INFO    Thread-16 :18100 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\config.yaml
+2023-05-03 16:50:10,334 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-03 16:50:11,406 INFO    SenderThread:18100 [sender.py:transition_state():626] send defer: 8
+2023-05-03 16:50:11,406 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: poll_exit
+2023-05-03 16:50:11,407 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:11,407 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 8
+2023-05-03 16:50:11,408 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:11,408 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 8
+2023-05-03 16:50:11,408 INFO    SenderThread:18100 [sender.py:transition_state():626] send defer: 9
+2023-05-03 16:50:11,408 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:11,408 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 9
+2023-05-03 16:50:11,409 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:11,409 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 9
+2023-05-03 16:50:11,409 INFO    SenderThread:18100 [dir_watcher.py:finish():365] shutting down directory watcher
+2023-05-03 16:50:12,245 INFO    SenderThread:18100 [dir_watcher.py:_on_file_modified():295] file/dir modified: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\output.log
+2023-05-03 16:50:12,246 INFO    SenderThread:18100 [dir_watcher.py:finish():395] scan: f:\Glaucoma\wandb\run-20230503_164939-0x001\files
+2023-05-03 16:50:12,246 INFO    SenderThread:18100 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\config.yaml config.yaml
+2023-05-03 16:50:12,247 INFO    SenderThread:18100 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\output.log output.log
+2023-05-03 16:50:12,248 INFO    SenderThread:18100 [dir_watcher.py:finish():409] scan save: f:\Glaucoma\wandb\run-20230503_164939-0x001\files\wandb-summary.json wandb-summary.json
+2023-05-03 16:50:12,255 INFO    SenderThread:18100 [sender.py:transition_state():626] send defer: 10
+2023-05-03 16:50:12,256 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:12,259 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 10
+2023-05-03 16:50:12,260 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:12,260 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 10
+2023-05-03 16:50:12,260 INFO    SenderThread:18100 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-03 16:50:13,264 INFO    wandb-upload_0:18100 [upload_job.py:push():137] Uploaded file f:\Glaucoma\wandb\run-20230503_164939-0x001\files\config.yaml
+2023-05-03 16:50:13,325 INFO    wandb-upload_2:18100 [upload_job.py:push():137] Uploaded file f:\Glaucoma\wandb\run-20230503_164939-0x001\files\wandb-summary.json
+2023-05-03 16:50:13,372 INFO    wandb-upload_1:18100 [upload_job.py:push():137] Uploaded file f:\Glaucoma\wandb\run-20230503_164939-0x001\files\output.log
+2023-05-03 16:50:13,580 INFO    Thread-15 :18100 [sender.py:transition_state():626] send defer: 11
+2023-05-03 16:50:13,580 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:13,580 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 11
+2023-05-03 16:50:13,581 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:13,581 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 11
+2023-05-03 16:50:13,581 INFO    SenderThread:18100 [file_pusher.py:join():172] waiting for file pusher
+2023-05-03 16:50:13,581 INFO    SenderThread:18100 [sender.py:transition_state():626] send defer: 12
+2023-05-03 16:50:13,581 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:13,581 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 12
+2023-05-03 16:50:13,582 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:13,582 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 12
+2023-05-03 16:50:14,464 INFO    SenderThread:18100 [sender.py:transition_state():626] send defer: 13
+2023-05-03 16:50:14,464 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:14,466 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 13
+2023-05-03 16:50:14,466 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:14,466 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 13
+2023-05-03 16:50:14,466 INFO    SenderThread:18100 [sender.py:transition_state():626] send defer: 14
+2023-05-03 16:50:14,467 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: defer
+2023-05-03 16:50:14,467 DEBUG   SenderThread:18100 [sender.py:send():375] send: final
+2023-05-03 16:50:14,467 INFO    HandlerThread:18100 [handler.py:handle_request_defer():170] handle defer: 14
+2023-05-03 16:50:14,467 DEBUG   SenderThread:18100 [sender.py:send():375] send: footer
+2023-05-03 16:50:14,468 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: defer
+2023-05-03 16:50:14,468 INFO    SenderThread:18100 [sender.py:send_request_defer():622] handle sender defer: 14
+2023-05-03 16:50:14,469 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: poll_exit
+2023-05-03 16:50:14,469 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: server_info
+2023-05-03 16:50:14,469 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: get_summary
+2023-05-03 16:50:14,469 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: poll_exit
+2023-05-03 16:50:14,470 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: sampled_history
+2023-05-03 16:50:14,470 DEBUG   SenderThread:18100 [sender.py:send_request():402] send_request: server_info
+2023-05-03 16:50:15,138 DEBUG   HandlerThread:18100 [handler.py:handle_request():144] handle_request: shutdown
+2023-05-03 16:50:15,138 INFO    HandlerThread:18100 [handler.py:finish():845] shutting down handler
+2023-05-03 16:50:15,472 INFO    WriterThread:18100 [datastore.py:close():298] close: f:\Glaucoma\wandb\run-20230503_164939-0x001\run-0x001.wandb
+2023-05-03 16:50:16,140 INFO    SenderThread:18100 [sender.py:finish():1550] shutting down sender
+2023-05-03 16:50:16,140 INFO    SenderThread:18100 [file_pusher.py:finish():167] shutting down file pusher
+2023-05-03 16:50:16,140 INFO    SenderThread:18100 [file_pusher.py:join():172] waiting for file pusher

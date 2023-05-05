@@ -1,0 +1,49 @@
+{
+    "os": "Windows-10-10.0.22621-SP0",
+    "python": "3.9.12",
+    "heartbeatAt": "2023-05-04T16:48:48.336733",
+    "startedAt": "2023-05-04T16:48:46.661905",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/bibek-khanal421/SMDG-Classifier.git",
+        "commit": "2eabe1b4aa1adea8231c35cf29a1752e0efa8154"
+    },
+    "email": "bishal.khanal.2057@gmail.com",
+    "root": "F:/Glaucoma",
+    "host": "DESKTOP-CVEI3G2",
+    "username": "Anton",
+    "executable": "c:\\Users\\Anton\\anaconda3\\envs\\ML\\python.exe",
+    "cpu_count": 8,
+    "cpu_count_logical": 16,
+    "cpu_freq": {
+        "current": 3200.0,
+        "min": 0.0,
+        "max": 3200.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 3200.0,
+            "min": 0.0,
+            "max": 3200.0
+        }
+    ],
+    "disk": {
+        "total": 238.37628555297852,
+        "used": 120.3972053527832
+    },
+    "gpu": "NVIDIA GeForce RTX 3060",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 3060",
+            "memory_total": 12884901888
+        }
+    ],
+    "memory": {
+        "total": 15.916919708251953
+    }
+}

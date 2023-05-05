@@ -1,0 +1,70 @@
+2023-05-04 20:47:39,955 INFO    StreamThr :16568 [internal.py:wandb_internal():86] W&B internal server running at pid: 16568, started at: 2023-05-04 20:47:39.955396
+2023-05-04 20:47:39,957 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status
+2023-05-04 20:47:39,976 INFO    WriterThread:16568 [datastore.py:open_for_write():85] open: f:\Glaucoma\wandb\run-20230504_204739-0x002\run-0x002.wandb
+2023-05-04 20:47:39,977 DEBUG   SenderThread:16568 [sender.py:send():375] send: header
+2023-05-04 20:47:40,385 DEBUG   SenderThread:16568 [sender.py:send():375] send: run
+2023-05-04 20:47:40,389 INFO    SenderThread:16568 [sender.py:_maybe_setup_resume():761] checking resume status for None/Glaucoma Detection/0x002
+2023-05-04 20:47:45,890 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:47:50,942 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:47:53,691 INFO    StreamThr :16568 [internal.py:wandb_internal():86] W&B internal server running at pid: 16568, started at: 2023-05-04 20:47:53.690913
+2023-05-04 20:47:53,693 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status
+2023-05-04 20:47:53,716 INFO    WriterThread:16568 [datastore.py:open_for_write():85] open: f:\Glaucoma\wandb\run-20230504_204753-0x002\run-0x002.wandb
+2023-05-04 20:47:53,717 DEBUG   SenderThread:16568 [sender.py:send():375] send: header
+2023-05-04 20:47:53,802 DEBUG   SenderThread:16568 [sender.py:send():375] send: run
+2023-05-04 20:47:54,576 ERROR   SenderThread:16568 [internal_api.py:execute():288] 409 response executing GraphQL.
+2023-05-04 20:47:54,577 ERROR   SenderThread:16568 [internal_api.py:execute():289] {"errors":[{"message":"run webcoders/Glaucoma Detection/0x002 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-05-04 20:47:55,962 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:47:56,131 ERROR   SenderThread:16568 [internal_api.py:execute():288] 409 response executing GraphQL.
+2023-05-04 20:47:56,132 ERROR   SenderThread:16568 [internal_api.py:execute():289] {"errors":[{"message":"run webcoders/Glaucoma Detection/0x002 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-05-04 20:47:58,819 ERROR   SenderThread:16568 [internal_api.py:execute():288] 409 response executing GraphQL.
+2023-05-04 20:47:58,819 ERROR   SenderThread:16568 [internal_api.py:execute():289] {"errors":[{"message":"run webcoders/Glaucoma Detection/0x002 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-05-04 20:47:58,819 INFO    SenderThread:16568 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "c:\Users\Anton\anaconda3\envs\ML\lib\site-packages\wandb\sdk\lib\retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "c:\Users\Anton\anaconda3\envs\ML\lib\site-packages\wandb\sdk\internal\internal_api.py", line 285, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "c:\Users\Anton\anaconda3\envs\ML\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "c:\Users\Anton\anaconda3\envs\ML\lib\site-packages\wandb\vendor\gql-0.2.0\wandb_gql\client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "c:\Users\Anton\anaconda3\envs\ML\lib\site-packages\wandb\sdk\lib\gql_request.py", line 56, in execute
+    request.raise_for_status()
+  File "c:\Users\Anton\anaconda3\envs\ML\lib\site-packages\requests\models.py", line 1021, in raise_for_status
+    raise HTTPError(http_error_msg, response=self)
+requests.exceptions.HTTPError: 409 Client Error: Conflict for url: https://api.wandb.ai/graphql
+2023-05-04 20:47:58,865 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-04 20:48:01,021 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:48:03,671 ERROR   SenderThread:16568 [internal_api.py:execute():288] 409 response executing GraphQL.
+2023-05-04 20:48:03,672 ERROR   SenderThread:16568 [internal_api.py:execute():289] {"errors":[{"message":"run webcoders/Glaucoma Detection/0x002 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-05-04 20:48:03,903 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-04 20:48:06,060 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:48:08,957 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-04 20:48:11,119 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:48:13,313 ERROR   SenderThread:16568 [internal_api.py:execute():288] 409 response executing GraphQL.
+2023-05-04 20:48:13,313 ERROR   SenderThread:16568 [internal_api.py:execute():289] {"errors":[{"message":"run webcoders/Glaucoma Detection/0x002 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-05-04 20:48:14,001 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-04 20:48:16,160 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:48:19,024 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-04 20:48:21,193 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:48:24,064 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-04 20:48:26,229 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:48:29,131 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-04 20:48:31,174 ERROR   SenderThread:16568 [internal_api.py:execute():288] 409 response executing GraphQL.
+2023-05-04 20:48:31,174 ERROR   SenderThread:16568 [internal_api.py:execute():289] {"errors":[{"message":"run webcoders/Glaucoma Detection/0x002 was previously created and deleted; try a new run name","path":["upsertBucket"]}],"data":{"upsertBucket":null}}
+2023-05-04 20:48:31,296 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:48:34,179 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-04 20:48:36,332 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:48:39,222 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-04 20:48:41,383 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:48:44,261 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-04 20:48:46,416 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:48:49,309 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: keepalive
+2023-05-04 20:48:51,463 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:48:54,350 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: cancel
+2023-05-04 20:48:54,350 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: cancel
+2023-05-04 20:48:54,351 DEBUG   SenderThread:16568 [sender.py:send():384] Record cancelled: run
+2023-05-04 20:48:54,351 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:48:56,499 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:48:59,400 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report
+2023-05-04 20:49:01,548 DEBUG   HandlerThread:16568 [handler.py:handle_request():144] handle_request: status_report

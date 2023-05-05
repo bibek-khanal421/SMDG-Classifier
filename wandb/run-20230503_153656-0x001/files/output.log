@@ -1,0 +1,23 @@
+WARNING:tensorflow:AutoGraph could not transform <function Model.make_test_function.<locals>.test_function at 0x000001A5973B2670> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: cannot import name 'soft_unicode' from 'markupsafe' (c:\Users\Anton\anaconda3\envs\ML\lib\site-packages\markupsafe\__init__.py)
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING: AutoGraph could not transform <function Model.make_test_function.<locals>.test_function at 0x000001A5973B2670> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: cannot import name 'soft_unicode' from 'markupsafe' (c:\Users\Anton\anaconda3\envs\ML\lib\site-packages\markupsafe\__init__.py)
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+
+
+
+31/31 [==============================] - 13s 219ms/step - loss: 0.3371 - accuracy: 0.8671
+
+
+31/31 [==============================] - 8s 218ms/step
+Test accuracy: 86.71%
+classification_report:
+               precision    recall  f1-score   support
+           0       0.89      0.88      0.89       589
+           1       0.83      0.84      0.84       397
+    accuracy                           0.87       986
+   macro avg       0.86      0.86      0.86       986
+weighted avg       0.87      0.87      0.87       986

@@ -1,0 +1,39 @@
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 12449 entries, 0 to 12448
+Data columns (total 2 columns):
+ #   Column  Non-Null Count  Dtype
+---  ------  --------------  -----
+ 0   names   12449 non-null  object
+ 1   types   12449 non-null  int64
+dtypes: int64(1), object(1)
+memory usage: 194.6+ KB
+0    7549
+1    4767
+Name: types, dtype: int64
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 8866 entries, 715 to 1024
+Data columns (total 2 columns):
+ #   Column  Non-Null Count  Dtype
+---  ------  --------------  -----
+ 0   types   8866 non-null   int64
+ 1   path    8866 non-null   object
+dtypes: int64(1), object(1)
+memory usage: 207.8+ KB
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 2464 entries, 7492 to 1896
+Data columns (total 2 columns):
+ #   Column  Non-Null Count  Dtype
+---  ------  --------------  -----
+ 0   types   2464 non-null   int64
+ 1   path    2464 non-null   object
+dtypes: int64(1), object(1)
+memory usage: 57.8+ KB
+<class 'pandas.core.frame.DataFrame'>
+Int64Index: 986 entries, 3280 to 8590
+Data columns (total 2 columns):
+ #   Column  Non-Null Count  Dtype
+---  ------  --------------  -----
+ 0   types   986 non-null    int64
+ 1   path    986 non-null    object
+dtypes: int64(1), object(1)
+memory usage: 23.1+ KB

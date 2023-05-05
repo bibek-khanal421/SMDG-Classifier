@@ -1,0 +1,31 @@
+2023-05-04 20:47:53,682 INFO    MainThread:20460 [wandb_setup.py:_flush():76] Current SDK version is 0.15.1
+2023-05-04 20:47:53,682 INFO    MainThread:20460 [wandb_setup.py:_flush():76] Configure stats pid to 20460
+2023-05-04 20:47:53,682 INFO    MainThread:20460 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Anton\.config\wandb\settings
+2023-05-04 20:47:53,682 INFO    MainThread:20460 [wandb_setup.py:_flush():76] Loading settings from f:\Glaucoma\wandb\settings
+2023-05-04 20:47:53,683 INFO    MainThread:20460 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-05-04 20:47:53,683 INFO    MainThread:20460 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-05-04 20:47:53,683 INFO    MainThread:20460 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-05-04 20:47:53,684 INFO    MainThread:20460 [wandb_init.py:_log_setup():507] Logging user logs to f:\Glaucoma\wandb\run-20230504_204753-0x002\logs\debug.log
+2023-05-04 20:47:53,684 INFO    MainThread:20460 [wandb_init.py:_log_setup():508] Logging internal logs to f:\Glaucoma\wandb\run-20230504_204753-0x002\logs\debug-internal.log
+2023-05-04 20:47:53,684 INFO    MainThread:20460 [wandb_init.py:init():547] calling init triggers
+2023-05-04 20:47:53,684 INFO    MainThread:20460 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'Dataset': 'Glaucoma', 'Models': 'ResNet50', 'learning_rate': 0.001, 'weight_decay': 0.0001, 'beta1': 0.9, 'metrics': ['accuracy']}
+2023-05-04 20:47:53,684 INFO    MainThread:20460 [wandb_init.py:init():596] starting backend
+2023-05-04 20:47:53,684 INFO    MainThread:20460 [wandb_init.py:init():600] setting up manager
+2023-05-04 20:47:53,688 INFO    MainThread:20460 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-05-04 20:47:53,692 INFO    MainThread:20460 [wandb_init.py:init():606] backend started and connected
+2023-05-04 20:47:53,713 INFO    MainThread:20460 [wandb_run.py:_label_probe_notebook():1238] probe notebook
+2023-05-04 20:47:53,713 INFO    MainThread:20460 [wandb_run.py:_label_probe_notebook():1248] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-05-04 20:47:53,714 INFO    MainThread:20460 [wandb_init.py:init():700] updated telemetry
+2023-05-04 20:47:53,800 INFO    MainThread:20460 [wandb_init.py:init():737] communicating run to backend with 60.0 second timeout
+2023-05-04 20:48:54,350 ERROR   MainThread:20460 [wandb_init.py:init():763] encountered error: Run initialization has timed out after 60.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+2023-05-04 20:48:54,528 ERROR   MainThread:20460 [wandb_init.py:init():1168] Run initialization has timed out after 60.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-
+Traceback (most recent call last):
+  File "c:\Users\Anton\anaconda3\envs\ML\lib\site-packages\wandb\sdk\wandb_init.py", line 1150, in init
+    run = wi.init()
+  File "c:\Users\Anton\anaconda3\envs\ML\lib\site-packages\wandb\sdk\wandb_init.py", line 769, in init
+    raise error
+wandb.errors.CommError: Run initialization has timed out after 60.0 sec. 
+Please refer to the documentation for additional information: https://docs.wandb.ai/guides/track/tracking-faq#initstarterror-error-communicating-with-wandb-process-

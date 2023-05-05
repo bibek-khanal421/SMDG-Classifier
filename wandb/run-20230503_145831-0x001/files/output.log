@@ -1,0 +1,12 @@
+Downloading data from https://storage.googleapis.com/tensorflow/keras-applications/xception/xception_weights_tf_dim_ordering_tf_kernels_notop.h5
+
+
+83683744/83683744 [==============================] - 3s 0us/step
+Epoch 1/50
+WARNING:tensorflow:AutoGraph could not transform <function Model.make_train_function.<locals>.train_function at 0x0000023155887820> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: cannot import name 'soft_unicode' from 'markupsafe' (c:\Users\Anton\anaconda3\envs\ML\lib\site-packages\markupsafe\__init__.py)
+To silence this warning, decorate the function with @tf.autograph.experimental.do_not_convert
+WARNING: AutoGraph could not transform <function Model.make_train_function.<locals>.train_function at 0x0000023155887820> and will run it as-is.
+Please report this to the TensorFlow team. When filing the bug, set the verbosity to 10 (on Linux, `export AUTOGRAPH_VERBOSITY=10`) and attach the full output.
+Cause: cannot import name 'soft_unicode' from 'markupsafe' (c:\Users\Anton\anaconda3\envs\ML\lib\site-packages\markupsafe\__init__.py)

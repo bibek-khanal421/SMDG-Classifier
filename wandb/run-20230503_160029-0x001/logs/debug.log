@@ -1,0 +1,42 @@
+2023-05-03 16:00:29,919 INFO    MainThread:18780 [wandb_setup.py:_flush():76] Current SDK version is 0.15.1
+2023-05-03 16:00:29,920 INFO    MainThread:18780 [wandb_setup.py:_flush():76] Configure stats pid to 18780
+2023-05-03 16:00:29,920 INFO    MainThread:18780 [wandb_setup.py:_flush():76] Loading settings from C:\Users\Anton\.config\wandb\settings
+2023-05-03 16:00:29,920 INFO    MainThread:18780 [wandb_setup.py:_flush():76] Loading settings from f:\Glaucoma\wandb\settings
+2023-05-03 16:00:29,920 INFO    MainThread:18780 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2023-05-03 16:00:29,920 INFO    MainThread:18780 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2023-05-03 16:00:29,920 INFO    MainThread:18780 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2023-05-03 16:00:29,920 INFO    MainThread:18780 [wandb_init.py:_log_setup():507] Logging user logs to f:\Glaucoma\wandb\run-20230503_160029-0x001\logs\debug.log
+2023-05-03 16:00:29,921 INFO    MainThread:18780 [wandb_init.py:_log_setup():508] Logging internal logs to f:\Glaucoma\wandb\run-20230503_160029-0x001\logs\debug-internal.log
+2023-05-03 16:00:29,921 INFO    MainThread:18780 [wandb_init.py:_jupyter_setup():453] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x000001D0B43E4D00>
+2023-05-03 16:00:29,921 INFO    MainThread:18780 [wandb_init.py:init():547] calling init triggers
+2023-05-03 16:00:29,921 INFO    MainThread:18780 [wandb_init.py:init():554] wandb.init called with sweep_config: {}
+config: {'Dataset': 'Glaucoma', 'Models': 'Xception', 'learning_rate': 0.001, 'beta1': 0.9, 'metrics': ['accuracy']}
+2023-05-03 16:00:29,921 INFO    MainThread:18780 [wandb_init.py:init():596] starting backend
+2023-05-03 16:00:29,921 INFO    MainThread:18780 [wandb_init.py:init():600] setting up manager
+2023-05-03 16:00:29,925 INFO    MainThread:18780 [backend.py:_multiprocessing_setup():106] multiprocessing start_methods=spawn, using: spawn
+2023-05-03 16:00:29,930 INFO    MainThread:18780 [wandb_init.py:init():606] backend started and connected
+2023-05-03 16:00:29,945 INFO    MainThread:18780 [wandb_run.py:_label_probe_notebook():1238] probe notebook
+2023-05-03 16:00:29,948 INFO    MainThread:18780 [wandb_run.py:_label_probe_notebook():1248] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2023-05-03 16:00:29,948 INFO    MainThread:18780 [wandb_init.py:init():700] updated telemetry
+2023-05-03 16:00:29,965 INFO    MainThread:18780 [wandb_init.py:init():737] communicating run to backend with 60.0 second timeout
+2023-05-03 16:00:30,919 INFO    MainThread:18780 [wandb_run.py:_on_init():2177] communicating current version
+2023-05-03 16:00:31,257 INFO    MainThread:18780 [wandb_run.py:_on_init():2186] got version response 
+2023-05-03 16:00:31,257 INFO    MainThread:18780 [wandb_init.py:init():787] starting run threads in backend
+2023-05-03 16:00:48,464 INFO    MainThread:18780 [wandb_run.py:_console_start():2158] atexit reg
+2023-05-03 16:00:48,464 INFO    MainThread:18780 [wandb_run.py:_redirect():2013] redirect: SettingsConsole.WRAP_RAW
+2023-05-03 16:00:48,464 INFO    MainThread:18780 [wandb_run.py:_redirect():2078] Wrapping output streams.
+2023-05-03 16:00:48,464 INFO    MainThread:18780 [wandb_run.py:_redirect():2103] Redirects installed.
+2023-05-03 16:00:48,465 INFO    MainThread:18780 [wandb_init.py:init():829] run started, returning control to user process
+2023-05-03 16:00:48,470 INFO    MainThread:18780 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-05-03 16:00:48,471 INFO    MainThread:18780 [wandb_init.py:_pause_backend():418] pausing backend
+2023-05-03 16:00:48,600 INFO    MainThread:18780 [wandb_init.py:_resume_backend():423] resuming backend
+2023-05-03 16:12:56,048 INFO    MainThread:18780 [wandb_run.py:_finish():1893] finishing run webcoders/Glaucoma Detection/0x001
+2023-05-03 16:12:56,211 INFO    MainThread:18780 [jupyter.py:save_history():445] not saving jupyter history
+2023-05-03 16:12:56,212 INFO    MainThread:18780 [jupyter.py:save_ipynb():373] not saving jupyter notebook
+2023-05-03 16:12:56,212 INFO    MainThread:18780 [wandb_init.py:_jupyter_teardown():435] cleaning up jupyter logic
+2023-05-03 16:12:56,212 INFO    MainThread:18780 [wandb_run.py:_atexit_cleanup():2127] got exitcode: 0
+2023-05-03 16:12:56,212 INFO    MainThread:18780 [wandb_run.py:_restore():2110] restore
+2023-05-03 16:12:56,212 INFO    MainThread:18780 [wandb_run.py:_restore():2116] restore done
+2023-05-03 16:13:03,215 INFO    MainThread:18780 [wandb_run.py:_footer_history_summary_info():3469] rendering history
+2023-05-03 16:13:03,216 INFO    MainThread:18780 [wandb_run.py:_footer_history_summary_info():3501] rendering summary
+2023-05-03 16:13:03,222 INFO    MainThread:18780 [wandb_run.py:_footer_sync_info():3428] logging synced files

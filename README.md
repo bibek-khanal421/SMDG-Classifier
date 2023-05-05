@@ -25,4 +25,4 @@ The dataset should be unzipped and placed in the main directory alongside train.
 3. Visualize GradCAM
 The cam.py file contains the code for implementing GradCAM. Both training and validation notebooks contains GRADcam visualization for last layers of the models.
 
-Training Metrics Wandb [here](https://wandb.ai/webcoders/Glaucoma%20Detection?workspace=user-krakenb)
+Training Metrics Wandb [here](https://wandb.ai/webcoders/Glaucoma-Detection-Backup?workspace=user-krakenb)
